@@ -12,7 +12,7 @@ import { createRoot } from 'react-dom/client';
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
 createInertiaApp({
-    title: () => 'সাম্প্রতিক ইস্যুতে আপনার মতামত দিন', // Set static title here
+    title: (title) => title || appName, // Default title if not set
     resolve: (name) =>
         resolvePageComponent(
             `./Pages/${name}.jsx`,
