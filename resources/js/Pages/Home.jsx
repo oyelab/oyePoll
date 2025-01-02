@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import avatar from "../images/avatar.jpg";
+import avatar from "../images/avatar-female.jpg";
 import axios from "axios";
 
 const Avatar = () => (
@@ -155,21 +155,23 @@ const PollForm = ({ poll, options, onVote }) => (
                         </button>
                     </div>
                 ))}
-
-                <button
-                    type="button"
-                    id="sub"
-                    className="voteNow"
-                    onClick={onVote}
-                >
-                    <span>ভোট দিন</span>
-                </button>
+				<div className="mx-auto d-flex justify-content-center mt-4">
+					<button
+						type="button"
+						id="sub"
+						className="voteNow w-50"
+						onClick={onVote}
+					>
+						<span>ভোট দিন</span>
+					</button>
+				</div>
             </fieldset>
         </div>
     </form>
 );
 
 const Home = ({ poll, options }) => {
+
     const [voted, setVoted] = useState(false);
     const [voteResults, setVoteResults] = useState({});
     const [totalVotes, setTotalVotes] = useState(0);

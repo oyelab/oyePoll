@@ -122,6 +122,8 @@ main
 	position: relative;
 	overflow: hidden;
 	height: 100%;
+	width: 100%;
+	align-items: center;
 }
 .avatarImg img
 {
@@ -311,6 +313,7 @@ main
 	z-index: 3;
 	pointer-events: none;
 }
+
 .radioField input
 {
     -webkit-appearance: none; /* Remove default radio button appearance */
@@ -375,7 +378,6 @@ main
 {
 	background-color: var(--btn-bg-color);
 	border-radius: 50px;
-
 	margin-top: 20px;
 	padding: 0 50px;
 	height: 74px;  
@@ -649,6 +651,7 @@ main
     {
         font-size: 18px;
     }
+	
     .carousel-item img
     {
         margin: 0 15px;
@@ -704,6 +707,7 @@ main
     {
         font-size: 15px;
     }
+
 }
 
 @media (max-width: 768px)
